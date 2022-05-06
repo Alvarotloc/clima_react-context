@@ -14,6 +14,7 @@ const Formulario = ():JSX.Element => {
             return setAlerta('Todos los campos son obligatorios')
         }
         consultarClima(busqueda);
+        setAlerta('');
     }
 
   return (
