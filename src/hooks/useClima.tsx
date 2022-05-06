@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import ClimaContext from '../context/ClimaProvider';
 
-const useClima = ():JSX.Element => {
+const useClima = () => {
 
   return useContext(ClimaContext);
 }

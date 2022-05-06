@@ -13,15 +13,20 @@ const [busqueda, setBusqueda] = useState<IBusqueda>({
     pais : ''
 });
 
-const datosBusqueda = (evento:any) => {
+const datosBusqueda = (evento:React.ChangeEvent<HTMLInputElement>) => {
     setBusqueda({
         ...busqueda,
         [evento.target.name] : evento.target.value
     })
 }
+
+const consultarClima = (datos:IBusqueda) => {
+
+}
     return (<ClimaContext.Provider value={{
         busqueda,
-        datosBusqueda
+        datosBusqueda,
+        consultarClima
     }}>
         {children}
     </ClimaContext.Provider>)
