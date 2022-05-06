@@ -1,6 +1,7 @@
+import AppClima from './components/AppClima';
 const App = ():JSX.Element => {
   return (
-    <div>App</div>
+    <AppClima />
   )
 }
 
